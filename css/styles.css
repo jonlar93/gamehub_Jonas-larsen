@@ -365,7 +365,8 @@ z-index: 3;
 }
 
 .supported-systems,
-.trending{
+.trending
+{
     width: 580px;
     background-color: var(--main-purple);
     border-radius: 25px;
@@ -428,11 +429,12 @@ z-index: 3;
     grid-column-end:5;
     grid-row-start: 2;
     grid-row-end:6;
+
 }
 
 .trending h3{
     grid-column-start:5 ;
-    grid-column-end:7;
+    grid-column-end:6;
     grid-row-start:2;
     grid-row-end: 3;
 }
@@ -441,15 +443,16 @@ z-index: 3;
 /* genre p  */
 .trending :nth-child(4){
     grid-column-start:5 ;
-    grid-column-end:7 ;
+    grid-column-end:6 ;
     grid-row-start: 3;
     grid-row-end: 4;
+
 }
 
 
 .trending a{
     grid-column-start:5 ;
-    grid-column-end:7 ;
+    grid-column-end:6 ;
     grid-row-start: 4;
     grid-row-end: 5;
 }
@@ -457,7 +460,7 @@ z-index: 3;
 /* price  */
 .trending :nth-child(6){
     grid-column-start:5 ;
-    grid-column-end:7 ;
+    grid-column-end:6 ;
     grid-row-start: 5;
     grid-row-end: 6;
 }
@@ -471,16 +474,61 @@ z-index: 3;
 }
 
 .trending-btn{
-    grid-column-start:5 ;
-    grid-column-end:7;
-    grid-row-start:9 ;
-    grid-row-end: 10;
+    grid-column-start:4;
+    grid-column-end:6;
+    grid-row-start:6 ;
+    grid-row-end: 7;
+    margin-left: 60px;
+    margin-bottom: 10px;
 
-    grid-column-start:1 ;
-    grid-column-end:2 ;
-    grid-row-start: 9;
-    grid-row-end: 10;
+    color: #fff;
 }
+
+.trending-btn1{
+    grid-column-start:5;
+    grid-column-end:7;
+    grid-row-start:6 ;
+    grid-row-end: 7;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+
+.news{
+    margin-inline: auto;
+    background-image: url(/images/news.png);
+    background-position: center,center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+    width: 590px;
+    border-radius: 25px;
+    box-shadow: 0px 0px 13px rgba(23, 112, 245, 0.9);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 89px;
+
+}
+
+.news p{
+    color: #fff;
+    font-size: var(--step-h2);
+}
+
+.news-h2{
+    margin: 20px;
+}
+
+/* .news a{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+} */
+
+
+
+
 
 
 
@@ -488,7 +536,9 @@ z-index: 3;
 /* games.html
 =======================================================================*/
 .product-container{
-    width: min(80%, 1500px);
+    /* width: max(350px, 1500px); */
+    min-width: 300px;
+    max-width: 1500px;
     margin-inline: auto;
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -805,7 +855,7 @@ grid-area: bt1;
 }
 
 /* add to cart button  */
-.add-to-cart-btn{
+.product-btn-2{
     grid-area: bt2;
 
 }
@@ -924,6 +974,12 @@ border-radius: 15px;
 
     #search-icon:checked ~ .search-bar{
         display: block;
+        position: absolute;
+        left: 50%;
+        top: 125%;
+        width: 250px;
+        margin-left: -125px;
+
     }
 
 
@@ -944,10 +1000,5 @@ border-radius: 15px;
         color: white;    
     }
 }
-
-
-
-
-
 
 /* main section end  */

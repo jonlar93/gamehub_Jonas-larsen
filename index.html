@@ -9,7 +9,6 @@
     <title>GameHub | Home</title>
     <link href="/css/styles.css" rel="stylesheet" />
     <link rel="icon" href="/images/icons/logo2.svg" />
-    <script src="https://kit.fontawesome.com/4b39bb1805.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
@@ -27,7 +26,7 @@
       </nav>
       <input type="checkbox" id="search-icon" />
       <label for="search-icon" class="seerch"><img src="/images/icons/SEARCH.png" /></label>
-      <input type="search" name="q" aria-label="search bar" class="search-bar" />
+      <input type="search" placeholder="search" name="q" aria-label="search bar" class="search-bar" />
       <a href="products/product.html " class="cart-icon">
         <img src="/images/icons/cart.png" alt="shopping kart" />
       </a>
@@ -61,17 +60,17 @@
           <a href="/products/product.html">more info</a>
           <p>$ 59,99</p>
           <img src="/images/icons/star-rating.png" alt="star rating" class="star-rating" />
-          <!-- <div class="trending-btn cta add-to-cart-btn"></div> -->
+          <div class="cta trending-btn">buy now</div>
+          <div class="add-to-cart-btn trending-btn1"></div>
         </div>
       </section>
       <section>
-        <h2>news from the hub</h2>
-        <div>
-          <img src="#" alt="the gamehub universe floating in space" />
+        <h2 class="news-h2">news from the hub</h2>
+        <div class="news">
           <p>only 1 month left</p>
           <p>until we launch</p>
           <p>the game hub universe</p>
-          <a href="#">sign up for beta</a>
+          <a href="#" class="cta">sign up for beta</a>
         </div>
       </section>
     </main>
