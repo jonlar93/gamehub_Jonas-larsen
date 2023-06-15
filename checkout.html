@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <html lang="en"></html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Game hub the universe of games. the one stop to buy all your favourite games across all consoles" />
+    <meta name="description" content="Gamehub checkout" />
     <title>GameHub | Checkout</title>
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="/images/icons/logo.svg" alt="Gamehub logo" class="logo" /></a>
+      <a href="index.html" class="logo"><img src="/images/icons/logo2.svg" alt="Gamehub logo" /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger"><img src="/images/icons/hamburger.svg" /></label>
       <nav>
         <ul>
           <li><a href="/index.html">home</a></li>
@@ -20,18 +23,18 @@
           <li><a href="/contact.html">contact</a></li>
         </ul>
       </nav>
+      <input type="checkbox" id="search-icon" />
+      <label for="search-icon" class="seerch"><img src="/images/icons/SEARCH.png" /></label>
       <input type="search" name="q" aria-label="search bar" class="search-bar" />
-      <div class="icons-container">
-        <a href="/cart.html">
-          <img src="/images/icons/shopping cart png gamehub.png" alt="shopping kart" class="cart-icon" />
-        </a>
-        <img src="/images/icons/SIGN IN.png" alt="profile/sign in" class="sign-in-icon" />
-      </div>
+      <a href="products/product.html " class="cart-icon">
+        <img src="/images/icons/cart.png" alt="shopping kart" />
+      </a>
+      <img src="/images/icons/sign-in.png" alt="profile/sign in" class="sign-in-icon" />
     </header>
     <main>
       <h1>payment</h1>
-      <section>
-        <div>
+      <section class="Checkout-container">
+        <div class="checkout">
           <p>price</p>
           <p>$ 59,99</p>
           <p>members discount</p>
@@ -39,19 +42,19 @@
           <p>subtotal</p>
           <p>$ 47,99</p>
         </div>
-        <div>
-          <img src="#" alt="visa logo" />
-          <p>cardholder name</p>
-          <!-- check input fields here for correctness -->
-          <input type="text" />
-          <p>card number</p>
-          <input type="number" />
-          <p>expiry date</p>
-          <input type="number" />
-          <p>ccv:</p>
-          <input type="number" />
-        </div>
-        <a href="#">pay now</a>
+        <form action="/success.html" method="get" class="payment-info">
+          <img src="/images/icons/visa.png" alt="visa logo" />
+          <label for="cardHolder">cardholder name</label>
+          <input type="text" required placeholder="first, middle and last name" id="cardHolder" />
+          <label for="cardNumber">card number</label>
+          <input type="number" required placeholder="16 digits" id="cardNumber" />
+          <label for="expiryDate">expiry date</label>
+          <input type="number" required placeholder="mm/yy" id="expiryDate" />
+          <label for="ccv">ccv</label>
+          <input type="number" required placeholder="123" id="ccv" />
+          <!-- submit button  -->
+          <input type="submit" value="pay now" class="cta cta-pay-now" />
+        </form>
       </section>
     </main>
     <footer>

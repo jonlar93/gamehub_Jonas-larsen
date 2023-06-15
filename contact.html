@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+  <html lang="en"></html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Game hub the universe of games. the one stop to buy all your favourite games across all consoles" />
+    <meta name="description" content="gamehub get in touch with us trough our contact form" />
     <title>GameHub | Contact us</title>
     <link href="/css/styles.css" rel="stylesheet" />
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="/images/icons/logo.svg" alt="Gamehub logo" class="logo" /></a>
+      <a href="index.html" class="logo"><img src="/images/icons/logo2.svg" alt="Gamehub logo" /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger"><img src="/images/icons/hamburger.svg" /></label>
       <nav>
         <ul>
           <li><a href="/index.html">home</a></li>
@@ -20,31 +23,40 @@
           <li><a href="/contact.html">contact</a></li>
         </ul>
       </nav>
-      <!-- check the search input here when getting to correct module -->
-      <input type="search" id="site-search" name="q" aria-label="search bar" class="search-bar" />
-      <div class="icons-container">
-        <a href="/cart.html">
-          <img src="/images/icons/shopping cart png gamehub.png" alt="shopping kart" class="cart-icon" />
-        </a>
-        <img src="/images/icons/SIGN IN.png" alt="profile/sign in" class="sign-in-icon" />
-      </div>
+      <input type="checkbox" id="search-icon" />
+      <label for="search-icon" class="seerch"><img src="/images/icons/SEARCH.png" /></label>
+      <input type="search" name="q" aria-label="search bar" class="search-bar" />
+      <a href="products/product.html " class="cart-icon">
+        <img src="/images/icons/cart.png" alt="shopping kart" />
+      </a>
+      <img src="/images/icons/sign-in.png" alt="profile/sign in" class="sign-in-icon" />
     </header>
     <main>
       <h1>contact us</h1>
-      <section>
-        <div>
+      <section class="contact-container">
+        <div class="contact-form">
           <h2>customer service</h2>
-          <p>phone number</p>
-          <!-- add input here  -->
-          <p>email</p>
-          <!-- add input here  -->
+          <form action="" method="get" class="contact">
+            <label for="phone">phone number</label>
+            <input type="number" placeholder="8 digits" id="phone" />
+            <label for="email">e-mail</label>
+            <input type="email" required placeholder="email@hotmail.com" id="email" />
+            <textarea name="message" id="submit" placeholder="what can we help you with?"></textarea>
+            <!-- submit button  -->
+            <input type="submit" value="submit" class="cta contact-form-submit" />
+          </form>
         </div>
-        <div>
+        <div class="contact-form">
           <h2>billing support</h2>
-          <p>phone number</p>
-          <!-- add input here  -->
-          <p>email</p>
-          <!-- add input here  -->
+          <form action="" method="get" class="contact">
+            <label for="phone">phone number</label>
+            <input type="number" placeholder="8 digits" id="phone" />
+            <label for="email">e-mail</label>
+            <input type="email" required placeholder="email@hotmail.com" id="email" />
+            <textarea name="message" id="submit" placeholder="what can we help you with?"></textarea>
+            <!-- submit button  -->
+            <input type="submit" value="submit" class="cta contact-form-submit" />
+          </form>
         </div>
       </section>
     </main>

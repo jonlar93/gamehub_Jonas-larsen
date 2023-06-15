@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <html lang="en"></html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +11,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="/images/icons/logo.svg" alt="Gamehub logo" class="logo" /></a>
+      <a href="index.html" class="logo"><img src="/images/icons/logo2.svg" alt="Gamehub logo" /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger"><img src="/images/icons/hamburger.svg" /></label>
       <nav>
         <ul>
           <li><a href="/index.html">home</a></li>
@@ -20,15 +23,22 @@
           <li><a href="/contact.html">contact</a></li>
         </ul>
       </nav>
+      <input type="checkbox" id="search-icon" />
+      <label for="search-icon" class="seerch"><img src="/images/icons/SEARCH.png" /></label>
       <input type="search" name="q" aria-label="search bar" class="search-bar" />
-      <div class="icons-container">
-        <a href="/cart.html">
-          <img src="/images/icons/shopping cart png gamehub.png" alt="shopping kart" class="cart-icon" />
-        </a>
-        <img src="/images/icons/SIGN IN.png" alt="profile/sign in" class="sign-in-icon" />
-      </div>
+      <a href="products/product.html " class="cart-icon">
+        <img src="/images/icons/cart.png" alt="shopping kart" />
+      </a>
+      <img src="/images/icons/sign-in.png" alt="profile/sign in" class="sign-in-icon" />
     </header>
-    <main></main>
+    <main>
+      <h1>success!</h1>
+      <section class="success-container">
+        <img src="/images/sucsess img.png" alt="success checkmark" />
+        <p>your payment was succesfull, enter the launch code “314-159-265” either in your browser, or your app to start the download</p>
+        <a href="/games.html" class="cta">browse more</a>
+      </section>
+    </main>
     <footer>
       <div class="social-container">
         <div>
