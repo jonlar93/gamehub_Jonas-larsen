@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <html lang="en"></html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,7 +11,9 @@
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="/images/icons/logo.svg" alt="Gamehub logo" class="logo" /></a>
+      <a href="index.html" class="logo"><img src="/images/icons/logo2.svg" alt="Gamehub logo" /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger"><img src="/images/icons/hamburger.svg" /></label>
       <nav>
         <ul>
           <li><a href="/index.html">home</a></li>
@@ -20,32 +23,47 @@
           <li><a href="/contact.html">contact</a></li>
         </ul>
       </nav>
+      <input type="checkbox" id="search-icon" />
+      <label for="search-icon" class="seerch"><img src="/images/icons/SEARCH.png" /></label>
       <input type="search" name="q" aria-label="search bar" class="search-bar" />
-      <div class="icons-container">
-        <a href="/cart.html">
-          <img src="/images/icons/shopping cart png gamehub.png" alt="shopping kart" class="cart-icon" />
-        </a>
-        <img src="/images/icons/SIGN IN.png" alt="profile/sign in" class="sign-in-icon" />
-      </div>
+      <a href="products/product.html " class="cart-icon">
+        <img src="/images/icons/cart.png" alt="shopping kart" />
+      </a>
+      <img src="/images/icons/sign-in.png" alt="profile/sign in" class="sign-in-icon" />
     </header>
     <main>
       <h1>cart</h1>
-      <section>
-        <div>
-          <img src="#" alt="space war game cover" />
-          <p>space war</p>
-          <p>$ 59,99</p>
-          <!-- insert correct dropdown menu here  -->
+
+      <section class="cart-container">
+        <div class="cart-1 border-dropshadow">
+          <img src="/images/products/spacewar.jpg" alt="space war game cover" />
+          <div>
+            <h2>space war</h2>
+            <div class="cart-1-price">
+              <p>$ 59,99 x</p>
+              <select id="cart-dropdown">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+          </div>
         </div>
         <h2>summary</h2>
         <div>
-          <p>price</p>
-          <p>$ 59,99</p>
-          <p>memeber discount</p>
-          <p>$ 12,00</p>
-          <p>subtotal</p>
-          <p>$ 47,99</p>
-          <a href="#">go to checkout</a>
+          <div class="cart-2">
+            <div class="cart-2-content">
+              <p>price:</p>
+              <p>$ 59,99</p>
+              <p>memeber discount:</p>
+              <p>$ 12,00</p>
+              <p>subtotal:</p>
+              <p>$ 47,99</p>
+              <a href="/checkout.html" class="cta">go to checkout</a>
+            </div>
+          </div>
         </div>
       </section>
     </main>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+  <html lang="en"></html>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,10 +8,14 @@
     <meta name="description" content="Game hub the universe of games. the one stop to buy all your favourite games across all consoles" />
     <title>GameHub | Home</title>
     <link href="/css/styles.css" rel="stylesheet" />
+    <link rel="icon" href="/images/icons/logo2.svg" />
+    <script src="https://kit.fontawesome.com/4b39bb1805.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header>
-      <a href="index.html"><img src="/images/icons/logo.svg" alt="Gamehub logo" class="logo" /></a>
+      <a href="index.html" class="logo"><img src="/images/icons/logo2.svg" alt="Gamehub logo" /></a>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="hamburger"><img src="/images/icons/hamburger.svg" /></label>
       <nav>
         <ul>
           <li><a href="/index.html">home</a></li>
@@ -20,39 +25,43 @@
           <li><a href="/contact.html">contact</a></li>
         </ul>
       </nav>
+      <input type="checkbox" id="search-icon" />
+      <label for="search-icon" class="seerch"><img src="/images/icons/SEARCH.png" /></label>
       <input type="search" name="q" aria-label="search bar" class="search-bar" />
-      <div class="icons-container">
-        <a href="products/product.html">
-          <img src="/images/icons/shopping-cart.png" alt="shopping kart" class="cart-icon" />
-        </a>
-        <img src="/images/icons/SIGN IN.png" alt="profile/sign in" class="sign-in-icon" />
-      </div>
+      <a href="products/product.html " class="cart-icon">
+        <img src="/images/icons/cart.png" alt="shopping kart" />
+      </a>
+      <img src="/images/icons/sign-in.png" alt="profile/sign in" class="sign-in-icon" />
     </header>
     <main>
-      <section class="hero">
-        <div class="hero-container">
-          <div class="hero-card1">
-            <h1>welcome to the gamehub</h1>
-          </div>
+      <section class="hero-container">
+        <div class="hero-card1">
+          <h1>welcome <span id="to">to</span> <span id="the-gamehub"> the gamehub </span></h1>
+        </div>
+        <div class="hero-card2">
+          <h2>welcome to the gamehub</h2>
+        </div>
+        <div class="hero-card3">
+          <h2>welcome to the gamehub</h2>
         </div>
       </section>
-      <section>
-        <h2>supported systems</h2>
-        <div>
+      <section class="home-section-two">
+        <div class="supported-systems">
+          <h2>supported systems</h2>
           <img src="/images/computer.png" alt="computer" />
           <img src="/images/playstation.png" alt="playstation" />
           <img src="/images/nintendo.png" alt="nintendo switch" />
           <img src="/images/xbox.png" alt="xbox" />
         </div>
         <!-- find a solution for the modal problem here  -->
-      </section>
-      <section>
-        <h2>trending this month</h2>
-        <div>
-          <img src="/images/products/space war.jpg" alt="product img" />
+        <div class="trending">
+          <h2>trending this month</h2>
+          <img src="/images/products/spacewar.jpg" alt="product img" />
           <h3>space war</h3>
           <p>action, rpg, multiplayer, adventure</p>
           <a href="/products/product.html">more info</a>
+          <p>$ 59,99</p>
+          <img src="/images/icons/star-rating.png" alt="star rating" class="star-rating" />
           <!-- add 3 more pages when you study modals -->
         </div>
       </section>
@@ -67,7 +76,6 @@
         </div>
       </section>
     </main>
-
     <footer>
       <div class="social-container">
         <div>
