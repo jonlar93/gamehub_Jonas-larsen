@@ -568,7 +568,9 @@ z-index: 3;
 }
 
 #phone,
-#email{
+#phone2,
+#email,
+#email2{
     width: 300px;
     height: 30px;
     text-indent: 10px;
