@@ -31,11 +31,11 @@ export async function renderProducts() {
 }
 
 
-// Check if the current HTML page is the expected one before rendering products
-if (window.location.pathname === "https://jonas-gamehub.netlify.app/games") {
-    // Call the renderProducts function to display the products
-    renderProducts();
-}
+// // Check if the current HTML page is the expected one before rendering products
+// if (window.location.pathname === "https://jonas-gamehub.netlify.app/games") {
+//     // Call the renderProducts function to display the products
+// renderProducts();
+// }
 
 
 // if i want to run my code in multiple html files
@@ -45,4 +45,3 @@ if (window.location.pathname === "https://jonas-gamehub.netlify.app/games") {
 //     // Call the renderProducts function to display the products
 //     renderProducts();
 // }
-

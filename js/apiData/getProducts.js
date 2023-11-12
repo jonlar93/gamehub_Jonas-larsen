@@ -6,8 +6,3 @@ export async function getProducts() {
     const results = await response.json();
     return results ;
 }
-
-
-
-
-
