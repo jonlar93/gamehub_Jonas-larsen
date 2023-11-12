@@ -1,29 +1,45 @@
 import { renderProducts } from "./renderHtml/renderAll.js";
-import { fetchDataAndRender } from "./apiData/getProduct.js";
 import { renderCart } from "./renderHtml/renderCart.js";
 import { renderTrending } from "./renderHtml/trending.js";
 import { renderHTML } from "./renderHtml/renderSingle.js";
+import { handleRenderError } from "./errorHandling/errorHandler.js";
 
 
 
-
+// call the functions if the statement matches 
 switch (location.pathname) {
     case "/games":
-        renderProducts();
+        try {
+            renderProducts();
+        } catch (error) {
+            console.error("Error rendering products:", error);
+            handleRenderError(error);
+        }
         break;
 
     case "/cart.html":
-        renderCart();
+        try {
+            renderCart();
+        } catch (error) {
+            console.error("Error rendering cart:", error);
+            handleRenderError(error);
+        }
         break;
 
     case "/products/product.html":
-        renderHTML();
+        try {
+            renderHTML();
+        } catch (error) {
+            console.error("Error rendering HTML:", error);
+            handleRenderError(error);
+        }
         break;
 
     default:
         try {
             renderTrending();
         } catch (error) {
-            // Handle the error if needed
+            console.error("Error rendering trending:", error);
+            handleRenderError(error);
         }
 }

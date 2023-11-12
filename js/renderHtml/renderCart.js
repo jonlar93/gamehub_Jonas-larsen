@@ -1,4 +1,3 @@
-// only for rendering the cart with the buy now feature and not the add to cart button
 import { fetchDataAndRender } from "../apiData/getProduct.js";
 
 export async function renderCart() {

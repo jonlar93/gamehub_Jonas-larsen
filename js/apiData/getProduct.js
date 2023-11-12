@@ -1,7 +1,6 @@
 import { renderHTML } from "../renderHtml/renderSingle.js";
 // get one product 
 export async function fetchDataAndRender() {
-  try {
   const queryString = document.location.search;
   const params = new URLSearchParams(queryString);
   const id = params.get("id");
@@ -10,10 +9,8 @@ export async function fetchDataAndRender() {
 
   const response = await fetch(url);
   const data = await response.json();
+  
   return data;
-  } catch (error) {
-  console.error('Error fetching data:', error);
-  }
 }
 
 
