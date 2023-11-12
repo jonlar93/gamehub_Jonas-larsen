@@ -30,6 +30,7 @@ export async function renderProducts() {
     });
 }
 
+
 // Check if the current HTML page is the expected one before rendering products
 if (window.location.pathname === "https://jonas-gamehub.netlify.app/games") {
     // Call the renderProducts function to display the products
