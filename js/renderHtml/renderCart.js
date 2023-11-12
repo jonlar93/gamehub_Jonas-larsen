@@ -45,9 +45,9 @@ export async function renderCart() {
 }
 
 
-// Check if the current HTML page is the expected one before rendering products
-if (window.location.pathname === "/cart.html") {
-    // Call the renderProducts function to display the products
-    renderCart();
+// // Check if the current HTML page is the expected one before rendering products
+// if (window.location.pathname === "/cart.html") {
+//     // Call the renderProducts function to display the products
+//     renderCart();
 
-}
+// }

@@ -29,9 +29,3 @@ export async function renderTrending() {
 }
 
 
-// Check if the current HTML page is the expected one before rendering products
-if (window.location.pathname === "/index.html") {
-    // Call the renderProducts function to display the products
-    renderTrending();
-
-}
