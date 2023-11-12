@@ -7,6 +7,7 @@
     <meta name="description" content="Game hub the universe of games. the one stop to buy all your favourite games across all consoles" />
     <title>GameHub | Cart</title>
     <link href="/css/styles.css" rel="stylesheet" />
+    <script defer type="module" src="js/index.js"></script>
   </head>
   <body>
     <header>
@@ -17,7 +18,6 @@
         <ul>
           <li><a href="/index.html">home</a></li>
           <li><a href="/games.html">games</a></li>
-          <li><a href="/cart.html">cart</a></li>
           <li><a href="/about.html">about</a></li>
           <li><a href="/contact.html">contact</a></li>
         </ul>
@@ -33,37 +33,8 @@
     <main>
       <h1>cart</h1>
 
-      <section class="cart-container">
-        <div class="cart-1 border-dropshadow">
-          <img src="/images/products/spacewar.jpg" alt="space war game cover" />
-          <div>
-            <h2>space war</h2>
-            <div class="cart-1-price">
-              <p>$ 59,99 x</p>
-              <select id="cart-dropdown" aria-label="drop down menu for number of games to buy">
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-              </select>
-            </div>
-          </div>
-        </div>
-        <h2>summary</h2>
-        <div>
-          <div class="cart-2">
-            <div class="cart-2-content">
-              <p>price:</p>
-              <p>$ 59,99</p>
-              <p>memeber discount:</p>
-              <p>$ 12,00</p>
-              <p>subtotal:</p>
-              <p>$ 47,99</p>
-              <a href="/checkout.html" class="cta">go to checkout</a>
-            </div>
-          </div>
-        </div>
+      <section class="cart-container details">
+        <span class="loader"></span>
       </section>
     </main>
     <footer>
