@@ -3,8 +3,6 @@ import { getProducts } from "../apiData/getProducts.js";
 export async function renderTrending() {
 
     const trending = await getProducts();
-    console.log(trending);
-
 
     const html = `
     <h2 class="dropshadow">trending this month</h2>
@@ -22,7 +20,7 @@ export async function renderTrending() {
     </div>
     `;
 
-
+    
     const detailsContainer = document.querySelector('.details');
     detailsContainer.innerHTML = "";
     detailsContainer.innerHTML = html;
