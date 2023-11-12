@@ -4,3 +4,4 @@ import { renderCart } from "./renderHtml/renderCart.js";
 import { renderTrending } from "./renderHtml/trending.js";
 
 
+console.log("hi");
