@@ -14,7 +14,7 @@ switch (location.pathname) {
         renderCart();
         break;
 
-    case "/products":
+    case "/products/product.html":
         renderHTML();
         break;
 
