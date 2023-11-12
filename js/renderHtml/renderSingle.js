@@ -44,12 +44,3 @@ export async function renderHTML() {
     detailsContainer.innerHTML = "";
     detailsContainer.innerHTML = html;
 }
-
-
-
-// // Check if the current HTML page is the expected one before rendering products
-// if (window.location.pathname === "/products/product.html") {
-//     // Call the renderProducts function to display the products
-//     renderHTML();
-
-// }

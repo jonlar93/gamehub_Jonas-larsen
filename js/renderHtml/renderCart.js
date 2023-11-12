@@ -43,11 +43,3 @@ export async function renderCart() {
     detailsContainer.innerHTML = "";
     detailsContainer.innerHTML = html;
 }
-
-
-// // Check if the current HTML page is the expected one before rendering products
-// if (window.location.pathname === "/cart.html") {
-//     // Call the renderProducts function to display the products
-//     renderCart();
-
-// }
