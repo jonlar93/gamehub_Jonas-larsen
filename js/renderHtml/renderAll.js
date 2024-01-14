@@ -5,11 +5,11 @@ function createProductCard(product) {
     const productCard = document.createElement("div");
     productCard.classList.add("product-card", "border-dropshadow");
     productCard.innerHTML = `
-    <h2>${product.title}</h2>
-    <a href="/products/product.html?id=${product.id}"><img src="${product.image}" alt="cover image of ${product.title}" class="product-img"/></a>
+    <h2>${product.name}</h2>
+    <a href="/products/product.html?id=${product.id}"><img src="${product.images[0].src}" alt="cover image of ${product.name}" class="product-img"/></a>
     <div class="productcard-grid">
-    <p>${product.genre}</p>
-    <p>${product.price}$</p>
+    <p>${product.tags[0].name}</p>
+    <p>${product.prices.price / 100}$</p>
     <a href="/cart.html?id=${product.id}" class="cta">buy now</a>
     <button class="add-to-cart-btn hidden">add to cart button</button>
     </div>

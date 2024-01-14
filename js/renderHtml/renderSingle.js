@@ -8,10 +8,10 @@ export async function renderHTML() {
     document.title = ` gamehub | ${game.title} `
     
     const html = `
-                <h1>${game.title}</h1>
+                <h1>${game.name}</h1>
                 <section class="game-container">
                 <div class="product-img-container">
-                    <img src="${game.image}" alt="cover image of ${game.title}" class="product-img"/> />
+                    <img src="${game.images[0].src}" alt="cover image of ${game.name}" class="product-img"/> />
                     <img src="/images/product-img2.jpg" alt="astronaut staring out on a wast space landscape" />
                     <img src="/images/product-img1.jpg" alt="a spaceship" />
                 </div>
@@ -19,7 +19,7 @@ export async function renderHTML() {
                     <h2>about the game</h2>
                     <p>${game.description}</p>
                 </div>
-                <p>$${game.price}</p>
+                <p>$${game.prices.price / 100}</p>
                 <a href="/cart.html?id=${game.id}" class="cta">buy now</a>
                 <button class="add-to-cart-btn product-btn-2 hidden">add to cart button</button>
                 </section>
