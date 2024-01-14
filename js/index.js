@@ -17,7 +17,7 @@ switch (location.pathname) {
         }
         break;
 
-    case "/cart.html":
+    case "/cart":
         try {
             renderCart();
         } catch (error) {
@@ -43,3 +43,4 @@ switch (location.pathname) {
             handleRenderError(error);
         }
 }
+

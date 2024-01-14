@@ -5,11 +5,12 @@ export async function fetchDataAndRender() {
   const params = new URLSearchParams(queryString);
   const id = params.get("id");
 
-  const url = "https://api.noroff.dev/api/v1/gamehub/" + id;
+  const url = "https://dev-jonas.com/wp-json/wc/store/products/" + id;
 
   const response = await fetch(url);
+  console.log(url)
   const data = await response.json();
-  
+
   return data;
 }
 

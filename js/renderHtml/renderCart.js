@@ -6,11 +6,11 @@ export async function renderCart() {
 
     const html = `
                     <div class="cart-1 border-dropshadow">
-                    <img src="${data.image}" alt="cover image of ${data.title}" />
+                    <img src="${data.images[0].src}" alt="cover image of ${data.name}" />
                     <div>
-                    <h2>${data.title}</h2>
+                    <h2>${data.name}</h2>
                     <div class="cart-1-price">
-                        <p>$ ${data.price} x</p>
+                        <p>$ ${data.prices.price / 100} x</p>
                         <select id="cart-dropdown" aria-label="drop down menu for number of games to buy">
                         <option value="1">1</option>
                         <option value="2">2</option>
@@ -26,11 +26,11 @@ export async function renderCart() {
                       <div class="cart-2">
                         <div class="cart-2-content">
                           <p>price:</p>
-                          <p>$${data.price}</p>
+                          <p>$${data.prices.price / 100}</p>
                           <p>memeber discount:</p>
                           <p>$ 0</p>
                           <p>subtotal:</p>
-                          <p>$ ${data.price}</p>
+                          <p>$ ${data.prices.price / 100}</p>
                           <a href="/checkout.html" class="cta">go to checkout</a>
                         </div>
                       </div>

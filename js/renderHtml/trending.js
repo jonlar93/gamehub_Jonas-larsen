@@ -6,12 +6,12 @@ export async function renderTrending() {
 
     const html = `
     <h2 class="dropshadow">trending this month</h2>
-    <img src="${trending[2].image}" alt="cover image of ${trending[2].title}" />
+    <img src="${trending[2].images[0].src}" alt="cover image of ${trending[2].name}" />
     <div class="trending-wrapper">
-      <h2>${trending[2].title}</h2>
-      <p>${trending[2].genre}</p>
+      <h2>${trending[2].name}</h2>
+      <p>${trending[2].tags[0].name}</p>
       <a href="/products/product.html" class="more-btn">more info</a>
-      <p>$ ${trending[2].price}</p>
+      <p>$ ${trending[2].prices.price / 100}</p>
     </div>
     <div class="trending-buttons">
       <img src="/images/icons/star-rating.png" alt="star rating" class="star-rating" />
