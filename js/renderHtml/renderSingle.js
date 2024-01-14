@@ -5,7 +5,7 @@ export async function renderHTML() {
 
     const game = await fetchDataAndRender();
     
-    document.title = ` gamehub | ${game.title} `
+    document.title = ` gamehub | ${game.name} `
     
     const html = `
                 <h1>${game.name}</h1>
