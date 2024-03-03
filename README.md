@@ -1,4 +1,4 @@
-# jonas/dev portfolio
+# gamehub
 
 ![image](/images/gamhub.PNG)
 
