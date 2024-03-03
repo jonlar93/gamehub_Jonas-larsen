@@ -11,7 +11,8 @@ this is gamehub an ecommerce website that we built up during the school year aft
 # the site contains the following page's
 
 - home
-- projects
+- games
+- game preview
 - about
 - contact
 
